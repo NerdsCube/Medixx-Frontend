@@ -107,7 +107,7 @@ const Profile = styled.div`
 
 const Icon = styled.div`
   display: flex;
-  justify-content: start;
+  justify-content: flex-end;
   align-items: center;
   color: #616bbe;
   cursor: pointer;

@@ -22,11 +22,11 @@ function SideBar() {
   return (
     <div className="container">
       <ToggleMenu onClick={handleClick}>
-        {open ? <FiX /> : <FiMenu />}
+        {open ? <FiX style={{ textAlign: "right" }} /> : <FiMenu />}
       </ToggleMenu>
       <div onClick={closeMenu} className={open ? "side-bar active" : "side-bar"}>
         <LogoContainer>
-          <h2> Logo </h2>
+          <h2> Medixx </h2>
         </LogoContainer>
         <List>
           <ListTitle>General</ListTitle>
@@ -93,6 +93,15 @@ const ToggleMenu = styled.div`
 
 const LogoContainer = styled.div`
   padding: 0.8rem;
+
+  h2 {
+    text-transform: uppercase;
+    color: #616bbe;
+
+    @media (min-width: 320px) and (max-width: 427px) {
+      color: white;
+    }
+  }
 `;
 
 const List = styled.ul`
